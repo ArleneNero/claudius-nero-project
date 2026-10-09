@@ -13,9 +13,9 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-[#030509] border-t border-white/10 py-12">
+    <footer className="bg-[#030509] border-t border-white/10 py-10 sm:py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-white/10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 sm:pb-8 border-b border-white/10">
           
           {/* Brand Mark & Title matching reference logo style */}
           <div className="flex items-center gap-3">
@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Nav Links */}
-          <nav className="flex flex-wrap items-center justify-center gap-6">
+          <nav className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             {footerLinks.map((link) => (
               <a
                 key={link.name}
@@ -42,6 +42,7 @@ export const Footer: React.FC = () => {
             ))}
           </nav>
         </div>
+
 
         {/* Footer Bottom info */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">

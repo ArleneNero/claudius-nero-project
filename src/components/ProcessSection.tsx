@@ -34,15 +34,15 @@ export const ProcessSection: React.FC = () => {
   ];
 
   return (
-    <section id="process" className="py-24 relative bg-[#030509] border-t border-white/10 scroll-mt-20">
+    <section id="process" className="py-16 sm:py-24 relative bg-[#030509] border-t border-white/10 scroll-mt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-3">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-sky-400 font-mono">
             OUR ENGAGEMENT APPROACH
           </h2>
-          <p className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <p className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
             How We Partner with Your Team
           </p>
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
@@ -51,22 +51,22 @@ export const ProcessSection: React.FC = () => {
         </div>
 
         {/* Exactly 4 Process Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="relative rounded-2xl glass-card p-6 flex flex-col justify-between transition-all duration-300"
+              className="relative rounded-2xl glass-card p-5 sm:p-6 flex flex-col justify-between transition-all duration-300"
             >
               <div>
-                <div className="flex items-center justify-between mb-6">
-                  <div className="p-2.5 rounded-xl bg-white/5 border border-white/10">
+                <div className="flex items-center justify-between mb-5 sm:mb-6">
+                  <div className="p-2 sm:p-2.5 rounded-xl bg-white/5 border border-white/10">
                     {step.icon}
                   </div>
-                  <span className="text-2xl font-extrabold font-mono text-slate-600">
+                  <span className="text-xl sm:text-2xl font-extrabold font-mono text-slate-600">
                     {step.num}
                   </span>
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2 tracking-tight">
+                <h3 className="text-base sm:text-lg font-bold text-white mb-2 tracking-tight">
                   {step.title}
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed">
@@ -78,9 +78,9 @@ export const ProcessSection: React.FC = () => {
         </div>
 
         {/* Guardrails Safeguard Banner */}
-        <div className="mt-12 rounded-2xl glass-card p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <div className="p-3 rounded-xl bg-blue-500/10 text-sky-400 border border-blue-500/20 shrink-0">
-            <ShieldCheck className="w-6 h-6" />
+        <div className="mt-8 sm:mt-12 rounded-2xl glass-card p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-3.5 sm:gap-4">
+          <div className="p-2.5 sm:p-3 rounded-xl bg-blue-500/10 text-sky-400 border border-blue-500/20 shrink-0">
+            <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6" />
           </div>
           <div className="space-y-1">
             <h4 className="text-sm font-semibold text-white">

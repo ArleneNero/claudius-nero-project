@@ -24,11 +24,11 @@ export const ProblemSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 relative bg-[#030509] border-t border-white/10">
+    <section className="py-16 sm:py-24 relative bg-[#030509] border-t border-white/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-3">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-sky-400 font-mono">
             THE OPERATIONAL BOTTLENECK
           </h2>
@@ -41,17 +41,17 @@ export const ProblemSection: React.FC = () => {
         </div>
 
         {/* Exactly 3 Problem Cards (No buttons) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-8">
           {problems.map((item, index) => (
             <div
               key={index}
-              className="rounded-2xl glass-card p-6 sm:p-8 flex flex-col justify-between transition-all duration-300"
+              className="rounded-2xl glass-card p-5 sm:p-8 flex flex-col justify-between transition-all duration-300"
             >
               <div>
-                <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-5 sm:mb-6">
                   {item.icon}
                 </div>
-                <h3 className="text-lg font-bold text-white mb-3 tracking-tight">
+                <h3 className="text-lg font-bold text-white mb-2 sm:mb-3 tracking-tight">
                   {item.title}
                 </h3>
                 <p className="text-sm text-slate-300 leading-relaxed">
